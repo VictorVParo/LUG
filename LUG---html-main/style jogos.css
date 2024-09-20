@@ -1,0 +1,116 @@
+/* Mobile First */
+body {
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove preenchimento padrão */
+    background: black; /* Cor de fundo da página */
+    font-family: Arial, sans-serif; /* Fonte padrão */
+    color: white; /* Cor do texto */
+}
+
+#logo {
+    background: #6A0C93; /* Cor de fundo do logo */
+    text-align: center; /* Centraliza o conteúdo */
+    padding: 20px 0; /* Espaçamento interno */
+}
+
+#logo img {
+    width: 100%; /* Imagem responsiva */
+    max-width: 200px; /* Tamanho máximo da imagem */
+}
+
+#navdobotao {
+    display: flex; /* Usando flexbox para layout */
+    flex-direction: column; /* Alinhamento vertical */
+    align-items: center; /* Centraliza horizontalmente */
+    margin: 10px 0; /* Espaçamento acima e abaixo */
+}
+
+.botao {
+    background-color: #6A0C93; /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    padding: 10px 15px; /* Espaçamento interno do botão */
+    text-decoration: none; /* Remove sublinhado */
+    transition: background-color 0.3s ease; /* Transição suave para a cor de fundo */
+    margin: 5px 0; /* Margem entre os botões */
+    width: 90%; /* Largura responsiva */
+    border-radius: 10px; /* Cantos arredondados */
+    text-align: center; /* Centraliza o texto */
+    font-size: 1em; /* Tamanho da fonte padrão */
+}
+
+.botao:hover {
+    background-color: #A45DBB; /* Cor de fundo ao passar o mouse */
+}
+
+main {
+    text-align: center; /* Centraliza o texto */
+    margin: 10px auto; /* Centraliza a margem */
+}
+
+.textinho {
+    background: lightgray;
+    color: black;
+    margin-top: 10%;
+    padding: 10px; /* Adicionando padding */
+    border-radius: 5px; /* Cantos arredondados */
+}
+
+.jogos-lista {
+    display: flex; /* Usando flexbox para layout */
+    flex-direction: column; /* Alinhamento vertical */
+    align-items: center; /* Centraliza horizontalmente */
+}
+
+.jogo-item {
+    background: #A45DBB; /* Cor de fundo do item de jogo */
+    width: 90%; /* Largura responsiva */
+    max-width: 400px; /* Largura máxima do item */
+    padding: 20px; /* Espaçamento interno */
+    margin: 10px 0; /* Margem acima e abaixo */
+    border-radius: 10px; /* Cantos arredondados */
+    text-align: left; /* Alinhamento do texto à esquerda */
+}
+
+.jogo-item img {
+    width: 100%; /* Imagem responsiva */
+    height: auto; /* Mantém a proporção */
+    border-radius: 10px; /* Cantos arredondados da imagem */
+}
+
+footer {
+    background: #6A0C93; /* Cor de fundo do rodapé */
+    text-align: center; /* Centraliza o texto do rodapé */
+    padding: 10px; /* Espaçamento interno */
+}
+
+/* Estilos para telas maiores */
+@media (min-width: 576px) {
+    #navdobotao {
+        flex-direction: row; /* Muda para alinhamento horizontal */
+        flex-wrap: wrap; /* Permite que os botões envolvam */
+        justify-content: center; /* Centraliza os botões */
+    }
+
+    .botao {
+        margin: 10px; /* Margem entre os botões */
+        width: auto; /* Largura automática para se ajustar */
+        padding: 10px 20px; /* Ajusta o preenchimento */
+    }
+
+    .jogos-lista {
+        flex-direction: row; /* Muda para alinhamento horizontal */
+        flex-wrap: wrap; /* Permite que os itens envolvam */
+        justify-content: center; /* Centraliza os itens */
+    }
+
+    .jogo-item {
+        margin: 10px; /* Margem entre os itens */
+        width: calc(50% - 20px); /* Largura responsiva */
+    }
+}
+
+@media (min-width: 768px) {
+    .jogo-item {
+        width: calc(33.33% - 20px); /* Largura responsiva para 3 colunas */
+    }
+}

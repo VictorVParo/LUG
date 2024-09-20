@@ -1,0 +1,128 @@
+
+/* Mobile First */
+body {
+    margin: 0;
+    padding: 0;
+    background: black;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+#logo {
+    background: #6A0C93;
+    text-align: center;
+    padding: 20px 0; /* Adicionando padding */
+}
+
+#logo img {
+    width: 100%; /* Adaptando a imagem para o tamanho do contêiner */
+    max-width: 200px; /* Limitando o tamanho máximo */
+}
+
+#navdobotao {
+    display: flex;
+    flex-direction: column; /* Alinha verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    margin: 10px 0; /* Espaçamento entre o logo e os botões */
+}
+
+.botao {
+    background-color: #6A0C93;
+    color: white;
+    padding: 10px 15px; /* Padding mais consistente */
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    margin: 5px 0; /* Espaçamento vertical entre botões */
+    width: 90%; /* Largura responsiva */
+    border-radius: 10px;
+    text-align: center;
+}
+
+.botao:hover {
+    background-color: #A45DBB; /* Cor ao passar o mouse */
+}
+
+/* Main */
+main, .caixa0, .caixa {
+    width: 100%;
+    text-align: center;
+    margin: 10px auto; /* Centralizando a caixa */
+}
+
+.caixa0 {
+    background: #6A0C93;
+    width: 100%; /* Largura responsiva */
+    max-width: 380px; /* Largura máxima */
+    padding: 20px; /* Adicionando padding */
+    border-radius: 10px; /* Cantos arredondados */
+}
+
+.caixa {
+    background: #A45DBB;
+    width: 100%; /* Largura responsiva */
+    max-width: 350px; /* Largura máxima */
+    padding: 20px; /* Adicionando padding */
+    border-radius: 5px; /* Cantos arredondados */
+}
+
+#textinho {
+    background: lightgray;
+    color: black;
+    margin-top: 10%;
+    padding: 10px; /* Adicionando padding */
+    border-radius: 5px; /* Cantos arredondados */
+}
+
+/* Rodapé */
+footer {
+    background: #6A0C93;
+    text-align: center;
+    padding: 10px; /* Adicionando padding */
+}
+
+/* Estilos para telas maiores */
+@media (min-width: 576px) {
+    #navdobotao {
+        flex-direction: row; /* Mudando para linha em telas maiores */
+        flex-wrap: wrap; /* Permite que os botões envolvam */
+        justify-content: center; /* Centraliza os botões */
+    }
+
+    .botao {
+        margin: 10px; /* Margem entre os botões */
+        width: auto; /* Largura automática para se ajustar */
+        padding: 10px 20px; /* Ajustando o padding */
+    }
+}
+
+/* Estilos para telas maiores */
+@media (min-width: 576px) {
+    #navdobotao {
+        flex-direction: row; /* Muda para alinhamento horizontal */
+        flex-wrap: wrap; /* Permite que os botões envolvam */
+        justify-content: center; /* Centraliza os botões */
+    }
+
+    .botao {
+        margin: 10px; /* Margem entre os botões */
+        width: auto; /* Largura automática para se ajustar */
+        padding: 10px 20px; /* Ajusta o preenchimento */
+    }
+
+    .jogos-lista {
+        flex-direction: row; /* Muda para alinhamento horizontal */
+        flex-wrap: wrap; /* Permite que os itens envolvam */
+        justify-content: center; /* Centraliza os itens */
+    }
+
+    .jogo-item {
+        margin: 10px; /* Margem entre os itens */
+        width: calc(50% - 20px); /* Largura responsiva */
+    }
+}
+
+@media (min-width: 768px) {
+    .jogo-item {
+        width: calc(33.33% - 20px); /* Largura responsiva para 3 colunas */
+    }
+}
